@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
+                sh 'PATH="$PATH:/home/user/opt/bin/"'
                 sh 'pwd'
                 sh 'ls -la'
                 sh 'rm -rf build'
